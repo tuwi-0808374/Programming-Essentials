@@ -42,5 +42,3 @@ print(f"{test_oct} -> {out_dec_oct}")
 test_hex = 12124
 out_dec_hex = system_to_decimal(test_hex, 16)
 print(f"{test_hex} -> {out_dec_hex}")
-
-####fddsf
