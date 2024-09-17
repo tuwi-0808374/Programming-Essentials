@@ -19,26 +19,26 @@ print(f"Binair: {result_bin}")
 print(f"Octaal: {result_oct}")
 print(f"Hexidecimaal: {result_hex}")
 
-def system_to_decimal(input, system):
-    string_numbers = str(input)
+def system_to_decimal(input_number, system):
+    hex_chars = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"]
+    input_number = input_number.upper()
     result_decimal = 0
-    for string_index in range(len(string_numbers)):
-        number = int(string_numbers[string_index])
-        power = system ** (len(string_numbers) - string_index - 1)
-        # print(f"{str(string_index)} {number} {power}")
+    for string_index in range(len(input_number)):
+        number = int(hex_chars.index(input_number[string_index]))
+        power = system ** (len(input_number) - string_index - 1)
         result_decimal += power * number
     return result_decimal
 
 print()
 
-test_bin = 111101
+test_bin = "111101"
 out_dec_bin = system_to_decimal(test_bin, 2)
-print(f"{test_bin} -> {out_dec_bin}")
+print(f"Input binair: {test_bin} -> Uitkomst decimaal: {out_dec_bin}")
 
-test_oct = 7623
+test_oct = "7623"
 out_dec_oct = system_to_decimal(test_oct, 8)
-print(f"{test_oct} -> {out_dec_oct}")
+print(f"Input octaal: {test_oct} -> Uitkomst decimaal: {out_dec_oct}")
 
-test_hex = 12124
+test_hex = "ee44"
 out_dec_hex = system_to_decimal(test_hex, 16)
-print(f"{test_hex} -> {out_dec_hex}")
+print(f"Input heximaal: {test_hex} -> Uitkomst decimaal: {out_dec_hex}")
