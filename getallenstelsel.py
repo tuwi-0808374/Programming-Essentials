@@ -33,12 +33,12 @@ print()
 
 test_bin = 111101
 out_dec_bin = system_to_decimal(test_bin, 2)
-print(f"{test_bin} -> {out_dec_bin}")
+print(f"Input binair: {test_bin} -> Uitkomst decimaal: {out_dec_bin}")
 
 test_oct = 7623
 out_dec_oct = system_to_decimal(test_oct, 8)
-print(f"{test_oct} -> {out_dec_oct}")
+print(f"Input octaal: {test_oct} -> Uitkomst decimaal: {out_dec_oct}")
 
 test_hex = 12124
 out_dec_hex = system_to_decimal(test_hex, 16)
-print(f"{test_hex} -> {out_dec_hex}")
+print(f"Input heximaal: {test_hex} -> Uitkomst decimaal: {out_dec_hex}")
