@@ -42,7 +42,7 @@ while True:
             pygame.quit()
             sys.exit()
 
-    color_index = random.randint(0, 4)
+    color_index = random.randint(0, 3)
 
     # Move the ball_1
     ball_1_x += ball_1_speed_x
