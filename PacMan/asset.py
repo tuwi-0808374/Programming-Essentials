@@ -1,9 +1,6 @@
 """ Base class for assets """
 import pygame
 
-WIDTH = 0
-HEIGHT = 1
-
 class Asset:
     def __init__(self, rectangle_size, screen):
         self._rectangle_size = rectangle_size
@@ -26,6 +23,7 @@ class Asset:
             self._active_image += 1
             if self._active_image == len(self._images):
                 self._active_image = 0
+
 
         image = self._images[self._active_image]
         surface.blit(image, (self._x, self._y))
