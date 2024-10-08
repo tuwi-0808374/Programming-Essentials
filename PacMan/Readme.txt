@@ -1,0 +1,1 @@
+Deze code en de Graphics folder moeten in een folder komen waar PyGame kan worden gekopieerd.
